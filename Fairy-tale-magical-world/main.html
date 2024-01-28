@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link href="img/pngegg (3).png" rel="shortcut icon" type="image/x-icon">
+    <link href="img/pngegg (3).png" rel="apple-touch-icon">
+    <title>Майбутнє моєї країни</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    :root{
+        font-family: 'Indie Flower', cursive;
+    }
+    .backs {
+        margin-top: 17%;
+    }
+</style>
+
+<body>
+    <img src="img/pngwing.com (25).png" alt="" class="backs" onclick="back(0)">
+    <h1>Чарівний світ казок</h1>
+    <h2>Добро?<br>Click and check!</h2>
+    <div class="cloudy1">
+        <div class="cloud"></div>
+    </div>
+    <div class="cloudy2">
+        <div class="cloud1"></div>
+    </div>
+    <div class="cloudy3">
+        <div class="cloud1" style="z-index: 1;"></div>
+    </div>
+    <div onmouseover="cloudsrise()" onmouseout="cloudsset()" id="opor"></div>
+    <h3>Зло?<br>Click and check!</h3>
+        <div class="cloudy4">
+            <div class="cloud"></div>
+        </div>
+        <div class="cloudy5">
+            <div class="cloud1"></div>
+        </div>
+        <div class="cloudy6">
+            <div class="cloud1" style="z-index: 1;"></div>
+        </div>
+        <div onmouseover="cloudsrise1()" onmouseout="cloudsset1()" id="opor1"></div>
+        <img src="img/time.png" alt="" class="time">
+        <img src="img/pngwing.com.png" alt="" class="sobriety">
+</body>
+<script src="js/main.js"></script>
+
+</html>

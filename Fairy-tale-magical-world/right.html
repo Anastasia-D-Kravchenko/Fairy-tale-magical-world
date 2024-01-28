@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link href="img/pngegg (3).png" rel="shortcut icon" type="image/x-icon">
+    <link href="img/pngegg (3).png" rel="apple-touch-icon">
+    <title>Довкілля</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    html {
+        background-image: url('img/HD wallpaper_ clouds, sky, blue, Sun, white, skyscape, sun rays, cloud - sky.jpeg');
+        width: 100%;
+        font-family: 'Indie Flower', cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h4 {
+        position: absolute;
+        bottom: 29%;
+        z-index: 3;
+        color: #fdeffd;
+        font-size: 3.5em;
+        animation: fly 5s ease-in-out infinite;
+    }
+
+    .backs {
+        left: 0;
+        top: 0;
+    }
+    @media screen and (max-width: 500px) {
+        html {
+            background-image: url('img/Без названия (1).jpeg');
+            background-size: cover;
+            width: 100%;
+            font-family: 'Indie Flower', cursive;
+            overflow-x: hidden;
+        }
+        #castle {
+        position: absolute;
+        width: 82%;
+        animation: flycastle 5s ease-in-out infinite;
+        top: 18%;
+        }
+        h4 {
+            position: absolute;
+            bottom: 29%;
+            z-index: 3;
+            color: #fdeffd;
+            font-size: 2.5em;
+            animation: fly 5s ease-in-out infinite;
+        }
+        .a3 {
+            width: 66px;
+            height: 67px;
+            position: absolute;
+            background: linear-gradient(121deg, #e9c3bab0, #929de18f);
+            border-radius: 50px;
+            z-index: -1;
+            animation: fly1 4s ease-in-out infinite;
+            bottom: -5%;
+            right: 0%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .a0 {
+            width: 66px;
+            height: 67px;
+            position: absolute;
+            background: linear-gradient(121deg, #e9c3bab0, #929de18f);
+            border-radius: 50px;
+            z-index: -1;
+            animation: fly1 4s ease-in-out infinite;
+            bottom: -5%;
+            right: 0%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }.a1 {
+            width: 66px;
+            height: 67px;
+            position: absolute;
+            background: linear-gradient(121deg, #e9c3bab0, #929de18f);
+            border-radius: 50px;
+            z-index: -1;
+            animation: fly1 4s ease-in-out infinite;
+            bottom: -5%;
+            right: 0%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }.a2 {
+            width: 66px;
+            height: 67px;
+            position: absolute;
+            background: linear-gradient(121deg, #e9c3bab0, #929de18f);
+            border-radius: 50px;
+            z-index: -1;
+            animation: fly1 4s ease-in-out infinite;
+            bottom: -5%;
+            right: 0%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        #fon0 {
+            display: none;
+        }
+        #fon1 {
+            display: none;
+        }
+        #fon2 {
+            display: none;
+        }
+        #fon3 {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <img src="img/pngwing.com (25).png" alt="" class="backs" onclick="back(1)">
+    <h4>Добро</h4>
+    <img src="img/pngwing.com (14).png" alt="" id="castle">
+    <img src="img/pngegg (6).png" alt="" id="fon0">
+    <img src="img/pngegg (6).png" alt="" id="fon1">
+    <img src="img/pngegg (6).png" alt="" id="fon2">
+    <img src="img/pngegg (6).png" alt="" id="fon3">
+    <div class="bbuble a0" onmouseover="del()" onmouseout="add()"><img src="img/Pngtreeinternet computer news_5364967.png" alt="" class="smen0"></div>
+    <div class="bbuble a1" onmouseover="del1()" onmouseout="add1()"><img src="img/Lovepik_com-400174791-envelope-letter.png" alt="" class="smen1"></div>
+    <div class="bbuble a2" onmouseover="del2()" onmouseout="add2()"><img src="img/kisspng-flat-design-vector-graphics-test-portable-network-omniupdate-blog-5cceb205d29998.1784496715570498618626.png" alt="" class="smen2"></div>
+    <div class="bbuble a3" onmouseover="del3()" onmouseout="add3()"><img src="img/pngwing.com (17).png" alt="" class="smen3"></div>
+    <div class="bird-container bird-one">
+        <div class="bird bird--one"></div>
+    </div>
+    <div class="bird-container bird-two">
+        <div class="bird bird--two"></div>
+    </div>
+    <div class="bird-container bird-three">
+        <div class="bird bird--three"></div>
+    </div>
+    <div class="bird-container bird-four">
+        <div class="bird bird--four"></div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>

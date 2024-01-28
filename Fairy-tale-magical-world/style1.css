@@ -1,0 +1,140 @@
+@keyframes animCloud {
+    0% {margin-left: -1000px;}
+    100% {margin-left: 100%;}
+}
+@keyframes fly {
+    0% {transform: translatey(0px);}
+    50% {transform: translatey(-20px);}
+    100% {transform: translatey(0px);}
+}
+@keyframes back {
+    0%{transform: rotateZ(180deg);}
+    50%{transform: rotateZ(360deg);}
+    100%{transform: rotateZ(180deg);}
+}
+body {
+    background: #80c9d7;
+    color: #333;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', cursive;
+    overflow: hidden;
+}
+
+#bagy {
+    top: 5%;
+    left: 2%;
+    right: 0;
+    padding-top: 50px;
+    position: fixed;
+}
+
+img {
+    margin-top: 50px;
+}
+
+.cloudy1 {
+    animation: animCloud 35s linear infinite;
+    transform: scale(0.65);
+}
+
+.cloudy2 {
+    animation: animCloud 20s linear infinite;
+    transform: scale(0.3);
+}
+
+.cloudy3 {
+    animation: animCloud 30s linear infinite;
+    transform: scale(0.5);
+}
+
+.cloudy4 {
+    animation: animCloud 18s linear infinite;
+    transform: scale(0.4);
+}
+
+.cloudy5 {
+    animation: animCloud 23s linear infinite;
+    transform: scale(0.45);
+}
+
+.cloudy6 {
+    animation: animCloud 29s linear infinite;
+    transform: scale(0.5);
+}
+
+.cloudy7 {
+    animation: animCloud 38s linear infinite;
+    transform: scale(0.55);
+}
+
+.cloud {
+    background: #eaeaec;
+    border-radius: 100px;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    height: 60px;
+    position: relative;
+    width: 320px;
+}
+
+.cloud:after,
+.cloud:before {
+    background: #eaeaec;
+    content: '';
+    position: absolute;
+    z-indeX: -1;
+}
+
+.cloud:after {
+    border-radius: 100px;
+    height: 100px;
+    left: 50px;
+    top: -50px;
+    width: 100px;
+}
+
+.cloud:before {
+    border-radius: 200px;
+    width: 145px;
+    height: 134px;
+    right: 50px;
+    top: -90px;
+}
+
+h1 {
+    position: absolute;
+    text-align: center;
+    line-height: 420px;
+    left: 550px;
+    font-size: 3.5em;
+    animation: fly 5s ease-in-out infinite;
+    z-indeX: 2;
+    color: #ffcc85;
+    transition: 1s;
+}
+
+h1:hover {
+    color: #ffff00;
+}
+
+#imgsun {
+    display: none;
+    position: absolute;
+    width: 200px;
+    z-index: -2;
+    top: 50%;
+    left: 45%;
+}
+
+.backs {
+    position: fixed;
+    z-index: 100;
+    width: 6%;
+    transform: rotateZ(180deg);
+    margin: 0;
+}
+
+.backs:hover {
+    animation: back 5s linear infinite;
+}
